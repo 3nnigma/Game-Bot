@@ -1,0 +1,18 @@
+{
+  "name": "enigma_minecraft_bot",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "src/Bot/main.js",
+  "scripts": {
+    "start": "node src/Bot/main.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.0.0",
+    "mineflayer-armor-manager": "^2.0.1",
+    "mineflayer-auto-eat": "^3.3.6",
+    "mineflayer-item-map-downloader": "^1.2.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "mineflayer-pvp": "^1.3.2",
+    "readline": "^1.3.0"
+  }
+}

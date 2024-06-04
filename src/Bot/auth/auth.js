@@ -1,7 +1,7 @@
 export async function selectMenu(bot, slot, qslot = 0) {
 	bot.setQuickBarSlot(qslot);
 	bot.activateItem(false);
-	bot.on('windowOpen', (window) => {
+	bot.once('windowOpen', (window) => {
 		bot.clickWindow(slot, 0, 0);
 	});
 }
@@ -15,6 +15,47 @@ export function botAuth(bot, messagestr) {
 		setTimeout(() => selectMenu(bot, 29), 1500);
 	}
 }
+
+
+
+
+
+// bot._client.on('resource_pack_send', (data) => {
+// 	const { url, hash } = data;
+// 	bot.emit('resourcepack', { url, hash });
+// });
+
+// const TEXTURE_PACK_RESULTS = {
+// 	SUCCESSFULLY_LOADED: 0,
+// 	DECLINED: 1,
+// 	FAILED_DOWNLOAD: 2,
+// 	ACCEPTED: 3
+// };
+
+// const acceptPack = () => {
+// 	bot._client.write('resource_pack_receive', {
+// 		result: TEXTURE_PACK_RESULTS.ACCEPTED
+// 	});
+// 	bot._client.write('resource_pack_receive', {
+// 		result: TEXTURE_PACK_RESULTS.SUCCESSFULLY_LOADED
+// 	});
+// };
+
+// const denyPack = () => {
+// 	bot._client.write('resource_pack_receive', {
+// 		result: TEXTURE_PACK_RESULTS.DECLINED
+// 	});
+// };
+// bot.on('resourcepack', () => acceptPack());
+
+
+
+
+
+
+
+
+
 
 
 

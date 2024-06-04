@@ -7,6 +7,15 @@ export function moveToCoordinates(goals, bot, x, y, z) {
 	console.log(`Бот движется к координатам: (${x}, ${y}, ${z})`);
 }
 
+
+function look(bot) {
+	if (bot.pvp.target) return;
+	if (bot.pathfinder.isMoving()) return;
+
+	const entity = bot.nearestEntity();
+	if (entity) bot.lookAt(entity.position.offset(0, entity.height, 0));
+}
+
 export function moveCoord(goals, bot, args) {
 	if (args.length === 4) {
 		const x = parseFloat(args[1]);

@@ -28,5 +28,3 @@ build/
 
 # Игнорирование пакетов
 *.tgz
-
-package-lock.json

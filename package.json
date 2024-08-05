@@ -1,5 +1,5 @@
 {
-  "name": "enigma_minecraft_bot",
+  "name": "enigma_bot",
   "type": "module",
   "version": "1.0.0",
   "main": "src/Bot/index.js",

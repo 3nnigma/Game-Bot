@@ -1,0 +1,14 @@
+{
+  "name": "mine_bot",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "src/Bot/index.js",
+  "scripts": {
+    "start": "node src/Bot/index.js"
+  },
+  "dependencies": {
+    "flayercaptcha": "^1.0.1",
+    "mineflayer": "^4.0.0",
+    "readline": "^1.3.0"
+  }
+}
